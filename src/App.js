@@ -7,6 +7,7 @@ import Header from './component/Header'
 import { Toolbar } from '@mui/material'
 import Contact from './pages/Contact'
 import Footer from './component/Footer'
+import ProjectDetail from './pages/ProjectDetail'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/ProjectDetail/:id' element={<ProjectDetail/>} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer/>
