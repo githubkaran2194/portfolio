@@ -24,7 +24,7 @@ const Projects = () => {
                 </Link>
                 <CardActions sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                   <Button variant='contained'>
-                    <a href={item.link} style={{ color: "white" }}>Link</a>
+                    <a href={item.link}  style={{ color: "white" }} target='_blank' rel="noreferrer">Link</a>
                   </Button>
                 </CardActions>
               </Card>
