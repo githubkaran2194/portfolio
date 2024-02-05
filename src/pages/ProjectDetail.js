@@ -19,7 +19,7 @@ const ProjectDetail = () => {
         <Typography variant="h4" gutterBottom textAlign={'center'}>
           {project.title}
         </Typography>
-        <img src={project.image && "https://img.freepik.com/free-vector/html5-programming-internet-website-development-web-application-engineering-script-writing-html-code-optimization-programmer-fixing-bugs_335657-2678.jpg?w=740&t=st=1706870078~exp=1706870678~hmac=097b603603fe31469d53b94719e8af99629ef1d939574d464dc47413ee26e59a"} alt={project.title} style={{ width: '100%', height:'190px', marginBottom: '20px', objectFit:"contain" }} />
+        <img src={project.image} alt={project.title} style={{ width: '100%', height:'190px', marginBottom: '20px', objectFit:"contain" }} />
         <Typography variant="body1" paragraph>
           {project.description}
         </Typography>
