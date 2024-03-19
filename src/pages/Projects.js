@@ -15,7 +15,7 @@ const Projects = () => {
           {projects.map((item) => (
             <Grid item key={item.id} md={4} lg={4}>
               <Card sx={{ p: "10px", cursor: "pointer", height: "100%" }} className='card-project'>
-                <Link to={`/ProjectDetail/${item.id}`} style={{ textDecoration: "none" }}>
+                <Link to={`/project/${item.id}`} style={{ textDecoration: "none" }}>
                   <CardMedia src={item.image} component={'img'} width={'100%'} height={200} sx={{ objectFit: "contain", boxShadow: "0 0 2px", background: "white", borderRadius: "5px" }} />
                   <CardContent sx={{ textAlign: "center" }}>
                     <Typography sx={{ letterSpacing: "1px", fontWeight: "bold", fontSize: "25px", lineHeight: "50px", color: "white" }}>{item.title}</Typography>

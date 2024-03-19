@@ -10,10 +10,10 @@ export const projects = [
     {
       id: 2,
       title: "E-commerce App",
-      description: "An e-commerce application with features like product listings,product filter, shopping cart, and user authentication with firebase auth.",
-      technologies: ["React", "Material UI", "Firebase"],
-      image: "https://i.ibb.co/YRR9XDy/Screenshot-2024-02-05-192541.png",
-      link:"https://e-commerce-project-blue.vercel.app/product"
+      description: "An e-commerce application with features like product listings,product filter, shopping cart,searching products and user authentication with auth0.",
+      technologies: ["React", "Material UI", "DummyApi", "Auto0"],
+      image: "https://i.postimg.cc/SK3k56Lg/Screenshot-2024-03-19-095812.png",
+      link:"https://karanquickshop.vercel.app/"
     },  
     {
       id: 3,
@@ -27,7 +27,7 @@ export const projects = [
       id: 4,
       title: "Bright In Tech",
       description: "A simple brightintech company website that provides a different type of services for developing in our applications",
-      technologies: ["React", "Bootstrap", "Firebase"],
+      technologies: ["React", "Bootstrap"],
       image: "https://i.ibb.co/5GnvLgm/brighintech.png",
       link:"https://brightintech-master.vercel.app/"
     },
@@ -35,9 +35,9 @@ export const projects = [
       id: 5,
       title: "To-Do List App",
       description: "A simple to-do list application to manage tasks and prioritize activities.",
-      technologies: ["React", "Firebase"],
-      image: "https://example.com/todo-app-image.png",
-      link:""
+      technologies: ["React","Bootstrap" ],
+      image: "https://i.postimg.cc/dVfbtq71/Screenshot-2024-03-19-100219.png",
+      link:"https://todo-eight-indol.vercel.app/"
     },
   ];
   
