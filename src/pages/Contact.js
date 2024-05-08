@@ -48,8 +48,8 @@ const Contact = () => {
         <Typography variant="body1" paragraph textAlign={'center'}>
           Feel free to contact me by submitting the form below, and I will get back to you as soon as possible.
         </Typography>
-        <Grid container spacing={4}>
-          <Grid item md={6}>
+        <Grid container spacing={4} >
+          <Grid item md={6} data-aos="fade-right">
             <Paper elevation={3} sx={{ padding: '20px',border:"1px solid black" ,width:"100%"}} component={'form'} onSubmit={handleSubmit}>
               <TextField label="Enter Your Name" name="name" fullWidth margin="dense" value={user.name} 
               onChange={handleChange}/>
@@ -68,7 +68,7 @@ const Contact = () => {
               <Button variant="contained" sx={{mt:"10px"}} type='submit'>Submit</Button>
             </Paper>
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={6} data-aos="fade-left">
           <img src="https://satyam-pund.netlify.app/static/media/header.099918eca3da108afee8.png" height={350} width={"100%"}/>
           </Grid>
         </Grid>

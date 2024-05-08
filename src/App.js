@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -8,8 +8,13 @@ import { Toolbar } from '@mui/material'
 import Contact from './pages/Contact'
 import Footer from './component/Footer'
 import ProjectDetail from './pages/ProjectDetail'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const App = () => {
+useEffect(()=>{
+AOS.init()
+},[])
   return (
     <>
       <BrowserRouter>

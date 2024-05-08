@@ -58,17 +58,17 @@ const Home = () => {
 
   return (
     <>
-      <Container className="home-bg" maxWidth="xl">
+      <Container className="home-bg" maxWidth="xl" >
         <Box sx={containerSx}>
           <Grid container spacing={4}>
-            <Grid item md={6}>
+            <Grid item md={6} data-aos="fade-right">
               <Box sx={textSx}>
                 <Typography sx={titleSx}>
                   Hi! I Am <br />
                   <span style={textName}>Karan Chavan.</span>
                 </Typography>
                 <Typography sx={subtitleSx}>
-                A Frontend React Developer Passionate About Coding. Always ready to try Hands-on New and Emerging Technologies.
+                A Frontend Developer Passionate About Coding. Always ready to try Hands-on New and Emerging Technologies.
                 </Typography>
                 <Box sx={buttonSx}>
                 <Link to={'/contact'}>
@@ -92,7 +92,7 @@ const Home = () => {
               </Box>
             </Grid>
 
-            <Grid item md={6}>
+            <Grid item md={6} data-aos="fade-left">
          <Box>
          <img src="https://satyam-pund.netlify.app/static/media/header.099918eca3da108afee8.png" width={"100%"} height={500} style={{objectFit:"contain"}}/>
          </Box>

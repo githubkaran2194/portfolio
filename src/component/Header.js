@@ -16,9 +16,9 @@ const Header = () => {
             </Link>
 
             <List sx={{ display: { xs: "none", md: "flex", sm: "flex", lg: "flex" } }}>
-              <ListItem sx={{ marginX: 2 }}><Link to={'/'} style={{ textDecoration: "none", color: "#333" }}>Home</Link></ListItem>
-              <ListItem sx={{ marginX: 2 }}><Link to={'/about'} style={{ textDecoration: "none", color: "#333" }}>About</Link></ListItem>
-              <ListItem sx={{ marginX: 2 }}><Link to={'/projects'} style={{ textDecoration: "none", color: "#333" }}>Projects</Link></ListItem>
+              <ListItem><Link to={'/'} className='text-red-500 hover:text-gray-500'>Home</Link></ListItem>
+              <ListItem><Link to={'/about'}  className='hover:text-gray-500'>About</Link></ListItem>
+              <ListItem><Link to={'/projects'} className='hover:text-gray-500'>Projects</Link></ListItem>
             </List>
 
             <List sx={{ display: "flex", alignItems: "center" }}>
@@ -34,8 +34,8 @@ const Header = () => {
       </Container>
 
       <Drawer open={open} onClose={() => setOpen(false)}>
-        <Toolbar sx={{ display: "grid", background: "#fff", color: "#333",m:"20px 0" }}>
-          <Link to={'/'} style={{ fontWeight: "800", fontFamily: "playfair display", fontSize: "1.5rem", textDecoration: "none", color: "#333" }} onClick={()=>setOpen(false)}>
+        <Toolbar sx={{ display: "grid", background: "#fff", color: "gray", fontWeight:"bold",m:"20px 0" }}>
+          <Link to={'/'} style={{ fontWeight: "800", fontFamily: "playfair display", fontSize: "1.5rem", textDecoration: "none", color: "gray", fontWeight:"bold" }} onClick={()=>setOpen(false)}>
             <Typography sx={{borderBottom:"1px solid grey"}}> <Hive color='secondary' /> Port<span style={{ color: "#007bff" }}>Folio</span></Typography>
           </Link>
           <List sx={{ marginTop: 3 }}>

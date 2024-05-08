@@ -1,8 +1,6 @@
 import { EmailRounded, GitHub, Instagram, LinkedIn } from '@mui/icons-material';
 import { Box, Button, Card, CardContent, CardMedia, Container, Grid, IconButton, List, Paper, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import databaseURL from '../firebase/firebase';
-import { get, ref } from 'firebase/database';
 import { technologies } from '../Technology';
 
 const sxAbout = {
@@ -32,9 +30,6 @@ const skillCard = {
   width: "100%",
   p: "10px",
   boxShadow: "none",
-  '&:hover': {
-    boxShadow: "0 0 10px ",
-  },
   position: "sticky",
 }
 
@@ -45,7 +40,7 @@ return (
     <Container maxWidth="xl">
       <Box sx={{ m: "70px 0" }}>
         <Grid container spacing={1}>
-          <Grid item md={4} xs={12} sm={6}>
+          <Grid item md={4} xs={12} sm={6}  data-aos="zoom-in">
             <Box sx={imgStyle}>
               <iframe width="100%" height="315" src="https://www.youtube.com/embed/NLjgYW1S9I4?si=jdEgZ0MGx-AdHWcR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -95,7 +90,7 @@ return (
               </Typography>
               <Box>
                 <Button sx={webTechnology}>WEB DEVELOPMENT</Button>
-                <Grid container spacing={1} sx={{ m: "10px 0" }}>
+                <Grid container spacing={1} sx={{ m: "10px 0" }} data-aos="fade-up">
                   {technology.frontend.map((item) => (
                     <Grid item md={3} sm={6} xs={6} key={item.id}>
                       <Card sx={skillCard}>
@@ -110,7 +105,7 @@ return (
 
 
                 <Button sx={webTechnology}>Tools</Button>
-                <Grid container spacing={2} sx={{ mt: "10px" }}>
+                <Grid container spacing={2} sx={{ mt: "10px" }}  data-aos="fade-up">
                   {technologies.tools.map((item) => (
                     <Grid item md={3} sm={6} xs={6} key={item.id}>
                     <Card sx={skillCard}>
