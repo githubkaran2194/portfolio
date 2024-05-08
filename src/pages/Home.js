@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import About from "./About";
@@ -94,7 +95,7 @@ const Home = () => {
 
             <Grid item md={6} data-aos="fade-left">
          <Box>
-         <img src="https://satyam-pund.netlify.app/static/media/header.099918eca3da108afee8.png" width={"100%"} height={500} style={{objectFit:"contain"}}/>
+         <img src="https://satyam-pund.netlify.app/static/media/header.099918eca3da108afee8.png" width={"100%"} height={400} style={{objectFit:"contain"}} className="img"/>
          </Box>
           </Grid>
           </Grid>

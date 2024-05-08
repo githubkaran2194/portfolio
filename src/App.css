@@ -1,14 +1,25 @@
-/* .home-bg{
-  background-image: url("https://img.freepik.com/free-vector/creative-geometric-design-space_53876-89781.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  filter: blur(0);
-} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
 .card-project{
   background: linear-gradient(90deg, #5b4ba5 0%, #A8C0FF 100%); 
+}
+
+
+.img{
+  animation: bounce infinite 3s ease-in-out;
+}
+@keyframes bounce {
+  0%{
+    transform: translateY(0px)
+  }50%{
+    transform: translateY(40px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
